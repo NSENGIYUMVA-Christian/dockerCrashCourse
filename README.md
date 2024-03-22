@@ -41,3 +41,15 @@ docker start containerName
 # docker volume
 
 docker run --name myapp_c_nodemon -p 4000:4000 --rm -v C:\Users\MOG-AG\Desktop\Docker\dockerCrashCourse\api:/app -v /app/node_modules myapp:nodemon
+
+# docker compose
+
+docker-compose up
+
+# delete or remove container
+
+docker-compose down
+
+# delete images and volume
+
+docker-compose down --rmi all -v
