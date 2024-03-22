@@ -33,3 +33,11 @@ docker system prune -a
 
 docker build -t imageName:tagName .
 (. stands for relative docker file path)
+
+# start running existing container
+
+docker start containerName
+
+# docker volume
+
+docker run --name myapp_c_nodemon -p 4000:4000 --rm -v C:\Users\MOG-AG\Desktop\Docker\dockerCrashCourse\api:/app -v /app/node_modules myapp:nodemon
